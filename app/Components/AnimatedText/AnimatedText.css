@@ -1,0 +1,30 @@
+@keyframes fill-text {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0 0;
+    color: #498e08; /* Ensures text stays green after animation */
+  }
+}
+
+@keyframes reset-text {
+  0% {
+    background-position: 0 0;
+    color: #336009; /* Starting from green */
+  }
+  100% {
+    background-position: 200% 0;
+    color: black; /* Going back to black */
+  }
+}
+
+.animate-fill-text {
+  animation: fill-text 3s ease-in-out forwards;
+  background-position: 0 0;
+}
+
+.animate-reset-text {
+  animation: reset-text 6s ease-in-out forwards;
+  background-position: 200% 0;
+}
